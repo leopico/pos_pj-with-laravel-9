@@ -1,0 +1,103 @@
+This is for list Api
+
+Products list -> http://127.0.0.1:8000/api/products/list (get method)
+
+Categories list -> http://127.0.0.1:8000/api/carogories/list  (get method)
+
+Carts list -> http://127.0.0.1:8000/api/carts/list  (get method)
+
+Contact list -> http://127.0.0.1:8000/api/contacts/list  (get method)
+
+deliveries list -> http://127.0.0.1:8000/api/deliveries/list  (get method)
+
+orders list page-> http://127.0.0.1:8000/api/orders/list  (get method)
+
+order list -> http://127.0.0.1:8000/api/orderList/list (get method)
+
+Users list -> http://127.0.0.1:8000/api/users/list (get method)
+
+-------------------------------   ---------------------------------------
+This is for create api
+
+Products create -> http://127.0.0.1:8000/api/carogories/create (post method)
+body{
+    name : ''
+}
+
+Categories create -> http://127.0.0.1:8000/api/products/create  (post method)
+body{
+    pizzaCategory : '' ,
+    pizzaName : '' ,
+    pizzaDescription : '' ,
+    pizzaPrice : '' ,
+    pizzaWaitingTime : '' ,
+    pizzaImage : '' ,
+}
+This all data with validation with 'required' and then image will check with [mimes:jpg,png,jpeg,webp,jfif | file]
+
+Contact create -> http://127.0.0.1:8000/api/contacts/create  (post method)
+body{
+    name : '' ,
+    email : '' ,
+    message : '' ,
+}
+This is only taking and create data with Api.It does not included in my project.
+
+deliveries create -> http://127.0.0.1:8000/api/deliveries/create  (post method)
+body{
+    deliveryWay : '' ,
+    deliveryFee : '' ,
+}
+This is create with validation check included [unique:deliveries,deli_way]
+
+--------------------------------     ----------------------------------------
+
+This is for delete Api
+
+delete categories -> http://127.0.0.1:8000/api/categories/delete (post method)
+body{
+    category_id : ''
+}
+
+delete products -> http://127.0.0.1:8000/api/products/delete (get method)
+url{
+    id : ''
+}
+
+delete deliveries -> http://127.0.0.1:8000/api/deliveries/delete (get method)
+url{
+    id : ''
+}
+---------------------------------     ------------------------------------------------------
+
+This is for details Api
+
+details categories -> http://127.0.0.1:8000/api/category/details (post method)
+body{
+    category_id : '' ,
+}
+
+-------------------------------      -------------------------------------------------------
+
+This is for update Api
+
+update categories -> http://127.0.0.1:8000/api/category/update (post method)
+body{
+    categoryName : '' ,
+    categoryId : '' ,
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+--------------------------------        ---------------------------------------------
